@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 0.6rem;
+}
+.navbar {
+  margin-bottom: 0px;
+  background-color: #848484;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 99;
+  border-style: none;
+  border-radius: 0px;
+}
+.navbar .container-fluid .navbar-header a {
+  width: 10rem;
+  padding: 0;
+  color: white;
+  margin-left: 0.5rem;
+}
+.navbar .container-fluid .navbar-header a img {
+  width: 100%;
+}
+.navbar .container-fluid .collapse .navbar-nav li a {
+  color: white;
+}
+.navbar .container-fluid .collapse .dropdown .dropdown-menu {
+  background-color: #848484;
+}
+.specialEffects {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /*动画关键帧*/
+}
+.specialEffects .square ul li {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  animation: square 10s linear infinite;
+  opacity: 0;
+  background-image: linear-gradient(#ffc2af, #ffe8a3);
+  z-index: 10;
+}
+.specialEffects .square li {
+  top: 50vh;
+  left: 20vw;
+}
+.specialEffects .square li:nth-child(2) {
+  top: 80vh;
+  left: 10vw;
+  /*动画延迟*/
+  animation-delay: 2s;
+}
+.specialEffects .square li:nth-child(3) {
+  top: 80vh;
+  left: 85vw;
+  animation-delay: 4s;
+}
+.specialEffects .square li:nth-child(4) {
+  top: 10vh;
+  left: 90vw;
+  animation-delay: 6s;
+}
+.specialEffects .square li:nth-child(5) {
+  top: 10vh;
+  left: 10vw;
+  animation-delay: 8s;
+}
+.specialEffects .square li:nth-child(6) {
+  top: 40vh;
+  left: 80vw;
+  animation-delay: 10s;
+}
+@keyframes square {
+  0% {
+    transform: scale(0) rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5) rotateY(1000deg);
+    opacity: 0;
+  }
+}
+.specialEffects .circle ul li {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  animation: circle 10s linear infinite;
+  opacity: 0;
+  background-image: linear-gradient(#ffc2af, #ffe8a3);
+  z-index: 10;
+}
+.specialEffects .circle li {
+  bottom: 0;
+  left: 10vw;
+}
+.specialEffects .circle li:nth-child(2) {
+  left: 20vw;
+  animation-delay: 2s;
+}
+.specialEffects .circle li:nth-child(3) {
+  left: 30vw;
+  animation-delay: 4s;
+}
+.specialEffects .circle li:nth-child(4) {
+  left: 70vw;
+  animation-delay: 6s;
+}
+.specialEffects .circle li:nth-child(5) {
+  left: 80vw;
+  animation-delay: 8s;
+}
+.specialEffects .circle li:nth-child(6) {
+  left: 90vw;
+  animation-delay: 10s;
+}
+@keyframes circle {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+    bottom: 0;
+    border-radius: 0;
+  }
+  100% {
+    transform: scale(4) rotate(1000deg);
+    opacity: 0;
+    bottom: 90vh;
+    border-radius: 50%;
+  }
+}
+.specialEffects .my_body {
+  width: 125rem;
+  height: 83rem;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.specialEffects .my_body .top_left_box {
+  width: 50rem;
+  height: 83rem;
+  position: absolute;
+  left: 0;
+  background-image: url(../images/top-2.png);
+  background-size: 100%;
+}
+.specialEffects .my_body .introduction_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specialEffects .my_body .introduction_box .introduction_textbox {
+  width: 34rem;
+  height: 30rem;
+}
+.specialEffects .my_body .introduction_box .introduction_textbox .titlespan {
+  font-size: 6rem;
+  font-family: "STXinwei";
+  text-align: center;
+}
+.specialEffects .my_body .introduction_box .introduction_textbox .titlespan p {
+  font-size: 6rem;
+  font-family: "STXinwei";
+  text-align: center;
+}
+.specialEffects .my_body .introduction_box .introduction_textbox .titlespan .lovespan {
+  font-size: 2rem;
+  font-family: "STXinwei";
+  color: #949494;
+  text-align: left;
+}
+.specialEffects .my_body .bottom_right_box {
+  width: 50rem;
+  height: 83rem;
+  position: absolute;
+  right: 0;
+  background-image: url(../images/top-1.png);
+  background-size: 100%;
+}
+.skill_box {
+  width: 125rem;
+  height: 83rem;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+}
+.skill_box .skill_title_box .skill_title {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill_box .skill_title_box .skill_title p {
+  font-size: 4rem;
+}
+.skill_box .skill_row {
+  height: 60rem;
+}
+.skill_box .skill_row .skill_body {
+  height: 100%;
+}

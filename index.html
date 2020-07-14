@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-1.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">我的介绍</a></li>
+                    <li><a href="#">我的技能</a></li>
+                    <li><a href="#">我的博客</a></li>
+                    <li><a href="#">关于摄影</a></li>
+                    <li><a href="#">关注我</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">建议意见</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">联系我 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">mosaic.bilibili@gmail.com</a></li>
+                            <li><a href="#">手机：13557417797</a></li>
+                            <li><a href="#">微信：13557417797</a></li>
+                            <li><a href="#">QQ：2515548348</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="specialEffects">
+        <div class="square">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="circle">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="my_body">
+            <div class="top_left_box">
+
+            </div>
+            <div class="introduction_box">
+                <div class="introduction_textbox">
+                    <sapn class="titlespan">
+                        你好,
+                        <p>我是mosaic,</p>
+                        <p>一个编程者,</p>
+                        <p class="lovespan">
+                            爱好摄影、跑步、二次元和编程。
+                        </p>
+                    </sapn>
+                </div>
+            </div>
+            <div class="bottom_right_box">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill_box container">
+        <div class="skill_title_box row">
+                <div class="col-md-12 skill_title">
+                    <p>
+                        掌握的技能
+                    </p>
+                    <span class="description">
+                        在学习专业知识的同时，发展摄影爱好也成为了我的次要目标，因此在掌握专业技能的同时，也能汲取到图形处理的知识
+                    </span>
+                </div>
+        </div>
+        <div class="skill_row row">
+            <div class="col-md-12 skill_body">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/index.js"></script>
+<!-- 看板娘 -->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-shizuku/assets/shizuku.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 100,
+            "height": 150,
+            "hOffset": 0,
+            "vOffset": -27
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.3
+        }
+    });
+</script>
+
+</html>
