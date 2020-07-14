@@ -300,7 +300,7 @@ html {
 }
 .like_body {
   width: 125rem;
-  height: 83rem;
+  height: 70rem;
   margin: 0 auto;
   margin-top: 7.5rem;
 }
@@ -329,7 +329,7 @@ html {
   height: 38rem;
   background-image: url(../images/she.jpg);
   background-size: 100%;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   padding: 0;
   display: flex;
   align-items: center;
@@ -362,7 +362,7 @@ html {
   height: 38rem;
   background-image: url(../images/pao.jpg);
   background-size: 100%;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   padding: 0;
   display: flex;
   align-items: center;
@@ -393,7 +393,7 @@ html {
   height: 38rem;
   background-image: url(../images/man.jpg);
   background-size: 100%;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   padding: 0;
   display: flex;
   align-items: center;
@@ -426,7 +426,6 @@ html {
   height: 38rem;
   background-image: url(../images/dai.jpg);
   background-size: 100%;
-  margin-right: 1rem;
   padding: 0;
   display: flex;
   align-items: center;
@@ -453,4 +452,48 @@ html {
   box-shadow: #000000 0px 10px 20px;
   transform: translate(0, -10px);
   transition: 1s;
+}
+.works_body {
+  width: 125rem;
+  height: 70rem;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+}
+.works_body .works_title_box .works_title {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.works_body .works_title_box .works_title p {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.works_body .works_title_box .works_title .description {
+  /*background-image: -webkit-linear-gradient(right, #ffc2af, #ffe8a3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+  color: #848484;
+}
+.works_body .works_box .works_box_m .content_box .content_box1 {
+  width: 100%;
+  height: 73rem;
+}
+.works_body .works_box .works_box_m .content_box .content_box1 .content_title {
+  width: 100%;
+  height: 5rem;
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  color: brown;
+}
+.works_body .works_box .works_box_m .content_box .content_box1 .Show_box_1 {
+  width: 250px;
+  height: 550px;
+  float: left;
+  margin-left: 2rem;
+}
+.works_body .works_box .works_box_m .content_box .content_box1 .Show_box_1 img {
+  width: 100%;
 }
