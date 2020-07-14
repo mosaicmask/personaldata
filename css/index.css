@@ -204,10 +204,253 @@ html {
 }
 .skill_box .skill_title_box .skill_title p {
   font-size: 4rem;
+  font-weight: 700;
+}
+.skill_box .skill_title_box .skill_title .description {
+  /*background-image: -webkit-linear-gradient(right, #ffc2af, #ffe8a3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+  color: #848484;
 }
 .skill_box .skill_row {
   height: 60rem;
 }
 .skill_box .skill_row .skill_body {
   height: 100%;
+}
+.skill_box .skill_row .skill_body ul {
+  display: flex;
+  flex-direction: row;
+}
+.skill_box .skill_row .skill_body ul li {
+  width: 10rem;
+  height: 10rem;
+  list-style: none;
+  border-radius: 60%;
+  transition: 1s;
+}
+.skill_box .skill_row .skill_body ul li .skill_img {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill_box .skill_row .skill_body ul li .skill_img span {
+  font-weight: 600;
+}
+.skill_box .skill_row .skill_body ul li:hover {
+  box-shadow: #848484 3px 2px 10px;
+  transform: translate(-3px, 0);
+  transition: 1s;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(1) {
+  position: relative;
+  left: 7rem;
+  top: 30rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(2) {
+  position: relative;
+  left: 10rem;
+  top: 20rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(3) {
+  position: relative;
+  top: 36rem;
+  left: 5rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(4) {
+  position: relative;
+  top: 45rem;
+  left: 16rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(5) {
+  position: relative;
+  top: 27rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(6) {
+  position: relative;
+  top: 9rem;
+  right: 13rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(7) {
+  position: relative;
+  top: 16rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(8) {
+  position: relative;
+  top: 36rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(9) {
+  position: relative;
+  top: 16rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(10) {
+  position: relative;
+  top: 30rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(11) {
+  position: relative;
+  top: 16rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(12) {
+  position: relative;
+  top: 30rem;
+}
+.like_body {
+  width: 125rem;
+  height: 83rem;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+}
+.like_body .like_title_box .like_title {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.like_body .like_title_box .like_title p {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.like_body .like_title_box .like_title .description {
+  /*background-image: -webkit-linear-gradient(right, #ffc2af, #ffe8a3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+  color: #848484;
+}
+.like_body .like_box {
+  margin-top: 5rem;
+}
+.like_body .like_box .like1 {
+  width: 29rem;
+  height: 38rem;
+  background-image: url(../images/she.jpg);
+  background-size: 100%;
+  margin-right: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.like_body .like_box .like1 .like_text {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(180, 180, 180, 0.493);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  position: relative;
+  bottom: 6rem;
+}
+.like_body .like_box .like1 .like_text span {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+}
+.like_body .like_box .like1:hover .like_text {
+  box-shadow: #000000 0px 10px 20px;
+  transform: translate(0, -10px);
+  transition: 1s;
+}
+.like_body .like_box .like2 {
+  width: 29rem;
+  height: 38rem;
+  background-image: url(../images/pao.jpg);
+  background-size: 100%;
+  margin-right: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.like_body .like_box .like2 .like_text {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(180, 180, 180, 0.493);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+.like_body .like_box .like2 .like_text span {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+}
+.like_body .like_box .like2:hover .like_text {
+  box-shadow: #000000 0px 10px 20px;
+  transform: translate(0, -10px);
+  transition: 1s;
+}
+.like_body .like_box .like3 {
+  width: 29rem;
+  height: 38rem;
+  background-image: url(../images/man.jpg);
+  background-size: 100%;
+  margin-right: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.like_body .like_box .like3 .like_text {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(180, 180, 180, 0.493);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  position: relative;
+  top: 6rem;
+}
+.like_body .like_box .like3 .like_text span {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+}
+.like_body .like_box .like3:hover .like_text {
+  box-shadow: #000000 0px 10px 20px;
+  transform: translate(0, -10px);
+  transition: 1s;
+}
+.like_body .like_box .like4 {
+  width: 29rem;
+  height: 38rem;
+  background-image: url(../images/dai.jpg);
+  background-size: 100%;
+  margin-right: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.like_body .like_box .like4 .like_text {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(180, 180, 180, 0.493);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  position: relative;
+  top: 12rem;
+}
+.like_body .like_box .like4 .like_text span {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+}
+.like_body .like_box .like4:hover .like_text {
+  box-shadow: #000000 0px 10px 20px;
+  transform: translate(0, -10px);
+  transition: 1s;
 }
