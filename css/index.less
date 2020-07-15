@@ -119,7 +119,10 @@ html {
         }
     }
 
+    // 通过 @keyframes 规则，您能够创建动画。
     @keyframes square {
+
+        // 0% 是动画的开始时间，100% 动画的结束时间。
         0% {
             transform: scale(0) rotateY(0deg);
             opacity: 1;
@@ -151,8 +154,10 @@ html {
             left: 10vw;
         }
 
+        // :nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型
         li:nth-child(2) {
             left: 20vw;
+            // 该属性定义动画何时开始。
             animation-delay: 2s;
         }
 
@@ -177,8 +182,10 @@ html {
         }
     }
 
-    /*动画关键帧*/
+    /*创建动画关键帧*/
     @keyframes circle {
+
+        // 0% 是动画的开始时间，100% 动画的结束时间。
         0% {
             transform: scale(0) rotate(0deg);
             opacity: 1;
@@ -401,7 +408,7 @@ html {
 
 .like_body {
     width: 125rem;
-    height: 70rem;
+    height: 62rem;
     margin: 0 auto;
     margin-top: 7.5rem;
 
@@ -579,7 +586,7 @@ html {
 
 .works_body {
     width: 125rem;
-    height: 70rem;
+    height: 90rem;
     margin: 0 auto;
     margin-top: 7.5rem;
 
@@ -605,19 +612,20 @@ html {
         }
     }
 
-    .works_box{
+    .works_box {
         margin-top: 4rem;
-        .works_box_m{
-            ul{
-                li{
 
-                }
+        .works_box_m {
+            ul {
+                li {}
             }
-            .content_box{
-                .content_box1{
+
+            .content_box {
+                .content_box1 {
                     width: 100%;
                     height: 73rem;
-                    .content_title{
+
+                    .content_title {
                         width: 100%;
                         height: 5rem;
                         display: block;
@@ -625,13 +633,15 @@ html {
                         margin-top: 3rem;
                         color: brown;
                     }
-                    .Show_box_1{
+
+                    .Show_box_1 {
                         width: 250px;
                         height: auto;
                         float: left;
                         margin-left: 2rem;
-                        border-radius: 2rem     ;
-                        img{
+                        border-radius: 2rem;
+
+                        img {
                             width: 100%;
                         }
                     }
@@ -643,7 +653,7 @@ html {
 
 .Photography_body {
     width: 125rem;
-    height: 70rem;
+    height: 76rem;
     margin: 0 auto;
     margin-top: 7.5rem;
 
@@ -668,26 +678,31 @@ html {
             }
         }
     }
-    .Photography_show{
+
+    .Photography_show {
         width: 100%;
         height: auto;
-        .swiper-container{
-            .swiper-wrapper{
-                .swiper-slide{
-                    .thumbnail{
+        margin-top: 5rem;
+
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .thumbnail {
                         width: 60rem;
-                        img{
-                        
-                        }
-                        .caption{
+
+                        img {}
+
+                        .caption {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            h3{
+
+                            h3 {
                                 font-weight: 600;
                             }
-                            h5{
+
+                            h5 {
                                 font-weight: 600;
                                 color: #b9b9b9;
                             }
@@ -699,4 +714,85 @@ html {
     }
 }
 
+.contact_body {
+    width: 125rem;
+    height: 30rem;
+    margin: 0 auto;
+    margin-top: 7.5rem;
 
+    .contact_title_box {
+        .contact_title {
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            .description {
+                /*background-image: -webkit-linear-gradient(right, #ffc2af, #ffe8a3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+                color: #848484;
+            }
+        }
+    }
+
+    .contact_box {
+        width: 100%;
+        height: auto;
+
+        .contact_logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 3rem;
+
+            li {
+                width: 9rem;
+                height: 9rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                transition: 1s;
+                overflow: hidden;
+                position: relative;
+
+                .img_1 {
+                    width: 6rem;
+                    position: absolute;
+                    transition: 0.9s;
+                }
+
+                .img_2 {
+                    width: 5rem;
+                    position: absolute;
+                    margin-left: 8rem;
+                    transition: 0.9s;
+                }
+            }
+
+            li:hover {
+                background-color: #fff;
+                box-shadow: #b3b3b3 0px 10px 20px;
+                transform: translate(0, -10px);
+                transition: 1s;
+
+                .img_1 {
+                    transform: translate(-7.5rem, 0);
+                    transition: 0.9s;
+                }
+
+                .img_2 {
+                    transform: translate(-8rem, 0);
+                    transition: 0.9s;
+                }
+            }
+        }
+    }
+}
