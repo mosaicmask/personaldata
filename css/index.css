@@ -292,11 +292,16 @@ html {
 }
 .skill_box .skill_row .skill_body ul li:nth-child(11) {
   position: relative;
-  top: 16rem;
+  top: 47rem;
 }
 .skill_box .skill_row .skill_body ul li:nth-child(12) {
   position: relative;
   top: 30rem;
+}
+.skill_box .skill_row .skill_body ul li:nth-child(13) {
+  position: relative;
+  top: 15rem;
+  right: 21rem;
 }
 .like_body {
   width: 125rem;
@@ -476,6 +481,9 @@ html {
                 -webkit-text-fill-color: transparent;*/
   color: #848484;
 }
+.works_body .works_box {
+  margin-top: 4rem;
+}
 .works_body .works_box .works_box_m .content_box .content_box1 {
   width: 100%;
   height: 73rem;
@@ -490,10 +498,54 @@ html {
 }
 .works_body .works_box .works_box_m .content_box .content_box1 .Show_box_1 {
   width: 250px;
-  height: 550px;
+  height: auto;
   float: left;
   margin-left: 2rem;
+  border-radius: 2rem     ;
 }
 .works_body .works_box .works_box_m .content_box .content_box1 .Show_box_1 img {
   width: 100%;
+}
+.Photography_body {
+  width: 125rem;
+  height: 70rem;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+}
+.Photography_body .Photography_title_box .Photography_title {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Photography_body .Photography_title_box .Photography_title p {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.Photography_body .Photography_title_box .Photography_title .description {
+  /*background-image: -webkit-linear-gradient(right, #ffc2af, #ffe8a3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+  color: #848484;
+}
+.Photography_body .Photography_show {
+  width: 100%;
+  height: auto;
+}
+.Photography_body .Photography_show .swiper-container .swiper-wrapper .swiper-slide .thumbnail {
+  width: 60rem;
+}
+.Photography_body .Photography_show .swiper-container .swiper-wrapper .swiper-slide .thumbnail .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Photography_body .Photography_show .swiper-container .swiper-wrapper .swiper-slide .thumbnail .caption h3 {
+  font-weight: 600;
+}
+.Photography_body .Photography_show .swiper-container .swiper-wrapper .swiper-slide .thumbnail .caption h5 {
+  font-weight: 600;
+  color: #b9b9b9;
 }

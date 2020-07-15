@@ -381,12 +381,18 @@ html {
 
                 li:nth-child(11) {
                     position: relative;
-                    top: 16rem;
+                    top: 47rem;
                 }
 
                 li:nth-child(12) {
                     position: relative;
                     top: 30rem;
+                }
+
+                li:nth-child(13) {
+                    position: relative;
+                    top: 15rem;
+                    right: 21rem;
                 }
             }
         }
@@ -600,6 +606,7 @@ html {
     }
 
     .works_box{
+        margin-top: 4rem;
         .works_box_m{
             ul{
                 li{
@@ -620,9 +627,10 @@ html {
                     }
                     .Show_box_1{
                         width: 250px;
-                        height: 550px;
+                        height: auto;
                         float: left;
                         margin-left: 2rem;
+                        border-radius: 2rem     ;
                         img{
                             width: 100%;
                         }
@@ -633,5 +641,62 @@ html {
     }
 }
 
+.Photography_body {
+    width: 125rem;
+    height: 70rem;
+    margin: 0 auto;
+    margin-top: 7.5rem;
+
+    .Photography_title_box {
+        .Photography_title {
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            .description {
+                /*background-image: -webkit-linear-gradient(right, #ffc2af, #ffe8a3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+                color: #848484;
+            }
+        }
+    }
+    .Photography_show{
+        width: 100%;
+        height: auto;
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .thumbnail{
+                        width: 60rem;
+                        img{
+                        
+                        }
+                        .caption{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            h3{
+                                font-weight: 600;
+                            }
+                            h5{
+                                font-weight: 600;
+                                color: #b9b9b9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
