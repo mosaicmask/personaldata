@@ -145,6 +145,7 @@ html {
   margin-top: 4.5rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .specialEffects .my_body .top_left_box {
   width: 50rem;
@@ -236,6 +237,9 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.skill_box .skill_row .skill_body ul li .skill_img img {
+  display: none;
 }
 .skill_box .skill_row .skill_body ul li .skill_img span {
   font-weight: 600;

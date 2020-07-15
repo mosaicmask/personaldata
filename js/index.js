@@ -1,14 +1,13 @@
 $(document).ready(function () {
-    $('#myTabs a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-    })
+    dynamicLines();
+    exampleTabs();
+    swiper();
+    signboardGirl();
+    listeningHeight();
+})
 
-    $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
-    $('#myTabs a:first').tab('show') // Select first tab
-    $('#myTabs a:last').tab('show') // Select last tab
-    $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
-
+//swiper js
+function swiper() {
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal', // 垂直切换选项
         slidesPerView: 2,
@@ -28,19 +27,72 @@ $(document).ready(function () {
             dragSize: 200,
         },
     })
+}
 
-    dynamicLines();
+//监听高度
+function listeningHeight() {
+    let my_width = $('#my_body').width();
+    console.log("listeningHeight -> my_width", my_width)
+    $(window).scroll(function () {
+        var scroH = $(document).scrollTop(); //滚动高度
+        var viewH = $(window).height(); //可见高度 
+        var contentH = $(document).height(); //内容高度
+        console.log("listeningHeight -> scroH", scroH)
+        console.log("listeningHeight -> viewH", viewH)
+        // console.log("listeningHeight -> contentH", contentH)
+        $('#my_body').css("width", my_width - scroH)
+        if (scroH >= 800) {
+            $("#my_body div").fadeOut();
+        } else {
+            $("#my_body div").fadeIn();
+        }
+        if (scroH + viewH >= 1800 && scroH + viewH <= 2370) {
+            $(".skill_img img").slideDown();
+        } else {
+            $(".skill_img img").slideUp();
+        }
+    });
+}
 
-    $(window).scroll(function () { //开始监听滚动条
-        //获取当前滚动条高度
-        var topp = $(document).scrollTop();
-        //用于调试 弹出当前滚动条高度
-        console.log(topp);
+//看板娘
+function signboardGirl() {
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-shizuku/assets/shizuku.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 100,
+            "height": 150,
+            "hOffset": 0,
+            "vOffset": -27
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.3
+        }
+    });
+}
 
-
+//bootstrap 标签页
+function exampleTabs() {
+    $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
     })
-})
 
+    $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+    $('#myTabs a:first').tab('show') // Select first tab
+    $('#myTabs a:last').tab('show') // Select last tab
+    $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+}
+
+//背景线条
 function dynamicLines() {
     function n(n, e, t) {
 
