@@ -7,9 +7,18 @@ html {
     font-size: 0.6rem;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .navbar {
     margin-bottom: 0px;
-    background-color: #c7c7c7;
+    background-color: #535353;
     position: sticky;
     position: -webkit-sticky; // 兼容 -webkit 内核的浏览器
     top: 0px; // 必须设一个值，否则不生效
@@ -55,6 +64,70 @@ html {
                     }
                 }
             }
+        }
+    }
+}
+
+.right_nav {
+    width: 8rem;
+    height: 30rem;
+    background-color: red;
+    bottom: initial;
+    z-index: 999;
+    border-radius: 1rem;
+    box-shadow: #d4d4d4 0px 0px 20px;
+    background-color: white;
+    position: absolute;
+    top: 35%; // 必须设一个值，否则不生效
+    left: 90%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .right_nav_ul {
+        width: 8rem;
+        height: 30rem;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        li {
+            height: 5rem;
+            width: 8rem;
+            list-style: none;
+
+            a {
+                height: 5rem;
+                width: 8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    font-size: 1.6rem;
+                }
+                img{
+                    width: 3.5rem;
+                    height: 3.5rem;
+                }
+            }
+            a:hover {
+                text-decoration: none;
+                color: white;
+                background-color: rgb(45, 206, 255);
+            }
+
+        }
+
+        li:nth-child(1) a {
+            background-color: rgb(45, 206, 255);
+            color: #fff;
+        }
+        li:nth-child(6) a {
+            background-color: white;
+            color: #fff;
         }
     }
 }

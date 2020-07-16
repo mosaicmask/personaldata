@@ -43,9 +43,60 @@ function listeningHeight() {
 
         // 导航栏
         if (scroH >= 100) {
-            $("#top_nav").css("background-color","#383838")
-        }else{
-            $("#top_nav").css("background-color","#c7c7c7")
+            $("#top_nav").css("background-color", "#2e2e2e")
+        } else {
+            $("#top_nav").css("background-color", "#535353")
+        }
+        //侧边导航栏
+        if (scroH < 100) {
+            $("#right_nav_ul li a").not($("#right_nav_ul li:eq(0)")).css({
+                "background-color": "#fff",
+                "color": "#000"
+            })
+            $("#right_nav_ul li:eq(0) a").css({
+                "background-color": "#2dceff",
+                "color": "#fff"
+            })
+        }
+        if (scroH >= 700) {
+            $("#right_nav_ul li a").not($("#right_nav_ul li:eq(1)")).css({
+                "background-color": "#fff",
+                "color": "#000"
+            })
+            $("#right_nav_ul li:eq(1) a").css({
+                "background-color": "#2dceff",
+                "color": "#fff"
+            })
+        }
+        if (scroH >= 1500) {
+            $("#right_nav_ul li a").not($("#right_nav_ul li:eq(2)")).css({
+                "background-color": "#fff",
+                "color": "#000"
+            })
+            $("#right_nav_ul li:eq(2) a").css({
+                "background-color": "#2dceff",
+                "color": "#fff"
+            })
+        }
+        if (scroH >= 2100) {
+            $("#right_nav_ul li a").not($("#right_nav_ul li:eq(3)")).css({
+                "background-color": "#fff",
+                "color": "#000"
+            })
+            $("#right_nav_ul li:eq(3) a").css({
+                "background-color": "#2dceff",
+                "color": "#fff"
+            })
+        }
+        if (scroH >= 3100) {
+            $("#right_nav_ul li a").not($("#right_nav_ul li:eq(4)")).css({
+                "background-color": "#fff",
+                "color": "#000"
+            })
+            $("#right_nav_ul li:eq(4) a").css({
+                "background-color": "#2dceff",
+                "color": "#fff"
+            })
         }
 
         // 欢迎页张开合并以及隐藏
