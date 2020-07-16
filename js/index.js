@@ -32,20 +32,31 @@ function swiper() {
 //监听高度
 function listeningHeight() {
     let my_width = $('#my_body').width();
-    console.log("listeningHeight -> my_width", my_width)
+    // console.log("listeningHeight -> my_width", my_width)
     $(window).scroll(function () {
         var scroH = $(document).scrollTop(); //滚动高度
         var viewH = $(window).height(); //可见高度 
-        var contentH = $(document).height(); //内容高度
-        console.log("listeningHeight -> scroH", scroH)
-        console.log("listeningHeight -> viewH", viewH)
+        // var contentH = $(document).height(); //内容高度
+        // console.log("listeningHeight -> scroH", scroH)
+        // console.log("listeningHeight -> viewH", viewH)
         // console.log("listeningHeight -> contentH", contentH)
+
+        // 导航栏
+        if (scroH >= 100) {
+            $("#top_nav").css("background-color","#383838")
+        }else{
+            $("#top_nav").css("background-color","#c7c7c7")
+        }
+
+        // 欢迎页张开合并以及隐藏
         $('#my_body').css("width", my_width - scroH)
         if (scroH >= 800) {
             $("#my_body div").fadeOut();
         } else {
             $("#my_body div").fadeIn();
         }
+
+        // 技能展示图标
         if (scroH + viewH >= 1800 && scroH + viewH <= 2370) {
             $(".skill_img img").slideDown();
         } else {

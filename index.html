@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
+    <!-- 顶部导航栏开始 -->
+    <nav class="navbar navbar-default" id="top_nav">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -50,28 +52,9 @@
             </div>
         </div>
     </nav>
+    <!-- 顶部导航栏结束 -->
+    <!-- 欢迎板块开始 -->
     <div class="specialEffects">
-        <div class="square">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="circle">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-
         <div class="my_body" id="my_body">
             <div class="top_left_box">
 
@@ -92,7 +75,8 @@
             </div>
         </div>
     </div>
-
+    <!-- 欢迎板块结束 -->
+    <!-- 掌握技能开始 -->
     <div class="skill_box container">
         <div class="skill_title_box row">
             <div class="col-md-12 skill_title">
@@ -189,7 +173,8 @@
             </div>
         </div>
     </div>
-
+    <!-- 掌握技能结束 -->
+    <!-- 兴趣爱好开始 -->
     <div class="like_body container wow">
         <div class="like_title_box row">
             <div class="col-md-12 like_title">
@@ -202,29 +187,29 @@
             </div>
         </div>
         <div class="row like_box">
-            <div class="col-md-3 like1">
-                <div class="like_text">
+            <div class="col-md-3 like1 wow bounceInLeft" data-wow-delay="1s">
+                <div class="like_text wow bounceIn" data-wow-delay="2s">
                     <span>
                         摄影
                     </span>
                 </div>
             </div>
-            <div class="col-md-3 like2">
-                <div class="like_text">
+            <div class="col-md-3 like2 wow fadeInUpBig" data-wow-delay="0.5s">
+                <div class="like_text wow bounceIn" data-wow-delay="2s">
                     <span>
                         跑步
                     </span>
                 </div>
             </div>
-            <div class="col-md-3 like3">
-                <div class="like_text">
+            <div class="col-md-3 like3 wow fadeInUpBig" data-wow-delay="0.5s">
+                <div class="like_text wow bounceIn" data-wow-delay="2s">
                     <span>
                         动漫
                     </span>
                 </div>
             </div>
-            <div class="col-md-3 like4">
-                <div class="like_text">
+            <div class="col-md-3 like4 wow bounceInRight" data-wow-delay="1s">
+                <div class="like_text wow bounceIn" data-wow-delay="2s">
                     <span>
                         编程
                     </span>
@@ -232,7 +217,8 @@
             </div>
         </div>
     </div>
-
+    <!-- 兴趣爱好结束 -->
+    <!-- 项目demo开始 -->
     <div class="container works_body">
         <div class="works_title_box row">
             <div class="col-md-12 works_title">
@@ -265,16 +251,16 @@
                         <span class="content_title">
                             本项目是以小组合作的形式完成，因为是学习性质，使用的是小程序原生框架，后台也使用的小程序云开发，核心功能是影片的评价评分系统,以下选择性展示个别页面
                         </span>
-                        <div class="Show_box_1">
+                        <div class="Show_box_1 wow bounceInLeft" data-wow-delay="1s">
                             <img src="images/YP1.jpg" alt="">
                         </div>
-                        <div class="Show_box_1">
+                        <div class="Show_box_1 wow bounceInLeft" data-wow-delay="1.5s">
                             <img src="images/YP2.jpg" alt="">
                         </div>
-                        <div class="Show_box_1">
+                        <div class="Show_box_1 wow bounceInLeft" data-wow-delay="2s">
                             <img src="images/YP4.jpg" alt="">
                         </div>
-                        <div class="Show_box_1">
+                        <div class="Show_box_1 wow bounceInLeft" data-wow-delay="2.5s">
                             <img src="images/YP5.jpg" alt="">
                         </div>
                     </div>
@@ -286,7 +272,8 @@
             </div>
         </div>
     </div>
-
+    <!-- 项目demo结束 -->
+    <!-- 摄影作品开始 -->
     <div class="Photography_body">
         <div class="Photography_title_box row">
             <div class="col-md-12 Photography_title">
@@ -371,7 +358,9 @@
             </div>
         </div>
     </div>
+    <!-- 摄影作品结束 -->
 
+    <!-- 页脚开始 -->
     <div class="contact_body">
         <div class="contact_title_box row">
             <div class="col-md-12 contact_title">
@@ -412,11 +401,16 @@
             </ul>
         </div>
     </div>
+    <!-- 页脚结束 -->
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>
