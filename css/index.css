@@ -670,7 +670,7 @@ a:hover {
 .contact_body .contact_box .contact_logo li .img_2 {
   width: 5rem;
   position: absolute;
-  margin-left: 8rem;
+  margin-left: 16rem;
   transition: 0.9s;
 }
 .contact_body .contact_box .contact_logo li:hover {
